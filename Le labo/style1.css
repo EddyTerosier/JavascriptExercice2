@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Montserra", sans-serif;
+    font-weight: 500;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, .87);
+    background: #fbfbfb;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 31px 87px;
+    box-shadow: #9f9f9f;
+}
+
+.social a, .footer a {
+    padding: 0 12px;
+    opacity: .50;
+}
+
+.social a:hover, .cgu a:hover {
+    opacity: 1;
+}
+.cgu a {
+    margin: 0 53px;
+    color: black;
+    text-decoration: none;
+}
+
+.topbar nav a {
+    margin: 0 53px;
+    color: grey;
+    text-decoration: none;
+    font-weight: 500;
+}
+.topbar nav a:hover, .topbar nav .active {
+    color: gold;
+}
+
+.banniere {
+    height: 516px;
+    background: no-repeat center center / cover url("images/keyboard.jpg");
+}
+
+.body {
+    display: flex;
+}
+
+.main {
+    background: white;
+    width: calc(100% - 375px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .5);
+    /* Pour dire que ce sera au premier plan ( c'est plus important que le reste) */
+    z-index: 2;
+}
+
+.sidebar {
+    background: #fbfbfb;
+    width: 375px;
+    padding: 40px;
+}
+
+.sidebar-title {
+    font-size: 30px;
+    color: black;
+    margin: 15px 0;
+}
+
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+
+.sidebar a {
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.sidebar ul {
+    margin: 0;
+    padding: O;
+    list-style: none;
+    font-size: 17px;
+}
+.sidebar li {
+    padding: 6px O;
+}
+.sidebar li:first-child {
+    padding-top: 0;
+}
+.sidebar li:last-child {
+    padding-bottom: 0;
+}
+
+.sidebar hr {
+    border: none;
+    background: #c4c4c4;
+    height: 1px;
+    margin: 50px 0;
+}
+
+.container {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.article {
+    margin: 50px 50px;
+    min-height: 203px;
+}
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+.article a:hover {
+    text-decoration: underline;
+}
+
+.article-date {
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+
+.article-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: "Cardo" , serif ;
+    margin: 0 0 15px 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
