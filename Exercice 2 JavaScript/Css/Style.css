@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Stencil";
+    src: url(../Font/Stencil/Stencil.ttf);
+    font-family: "CooperHewitt";
+    src: url(../Font/cooper-hewitt/CooperHewitt-Medium.otf);
+}
+.chronometre{
+    margin: auto ;
+    width: 300px;
+    text-align: center;
+    
+  }
+
+.time{
+      margin: auto;
+      width: 300px;
+      border: 1px solid rgba(0,0,0,0.5);
+      padding:5px 0;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: "Stencil";
+      margin-bottom: 10px;
+
+
+  }
+ 
+button{
+    background: #35393c;
+    color: #87ff65;
+    width: 70px;
+    border-radius: 5px;
+    line-height: 1.5em;
+    border: none;
+    font-family: "Stencil";
+    width: auto;
+  }
+
+  .active{
+    color: #fff;
+    background: red;
+    border: 2px dotted black;
+    padding: 5px;
+  }
