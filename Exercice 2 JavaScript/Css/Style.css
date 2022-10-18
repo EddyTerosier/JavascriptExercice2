@@ -4,6 +4,9 @@
     font-family: "CooperHewitt";
     src: url(../Font/cooper-hewitt/CooperHewitt-Medium.otf);
 }
+body{
+  background-color: rgb(255, 255, 255);
+}
 .chronometre{
     margin: auto ;
     width: 300px;

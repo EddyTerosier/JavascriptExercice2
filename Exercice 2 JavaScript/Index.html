@@ -14,27 +14,33 @@
             <h1 id="titre">Titre test</h1>
             <tr>
                 <td><label for="rgb">Couleur de fond (rgb)</label></td>
-                <td>0<input type="range" min="0" max="255" step="5" value="0" id="rgb" name="color" oninput="changement(this)">255</td>
+                <td>0<input type="range" min="0" max="255" step="5" value="0" id="rgb" name="redBGColor" oninput="changeBackgroundColor(this)">255 red</td>
+                <td>0<input type="range" min="0" max="255" step="5" value="0" id="rgb" name="greenBGColor" oninput="changeBackgroundColor(this)">255 green</td>
+                <td>0<input type="range" min="0" max="255" step="5" value="0" id="rgb" name="blueBGColor" oninput="changeBackgroundColor(this)">255 blue</td>
+            </tr>
+            <tr>
+                <td><label for="rgb">Couleur du titre (rgb)</label></td>
+                <td colspan="3">0<input type="range" min="0" max="255" step="5" value="0" id="rgb" name="color" oninput="changeTitleColor(this)">255</td>
             </tr>
             <tr>
                 <td><label for="padding">Padding</label></td>
-                <td>0<input type="range" min="0" max="30" value="0" id="padding" name="padding" oninput="changement(this)">30</td>
+                <td colspan="3">0<input type="range" min="0" max="30" value="0" id="padding" name="padding" oninput="changePadding(this)">30</td>
             </tr>
             <tr>
                 <td><label for="height">Height</label></td>
-                <td>0<input type="range" min="0" max="200" value="0" id="height" name="height" oninput="changement(this)">200</td>
+                <td colspan="3">0<input type="range" min="0" max="200" value="0" id="height" name="height" oninput="changement(this)">200</td>
             </tr>
             <tr>
                 <td><label for="width">width</label></td>
-                <td>0<input type="range" min="0" max="200" value="0" id="width" name="width" oninput="changement(this)">200</td>
+                <td colspan="3">0<input type="range" min="0" max="200" value="0" id="width" name="width" oninput="changement(this)">200</td>
             </tr>
             <tr>
                 <td><label for="arrondi">Arrondi</label></td>
-                <td>0<input type="range" min="0" max="30" value="0" id="arrondi" name="arrondi" oninput="changement(this)">30</td>
+                <td colspan="3">0<input type="range" min="0" max="30" value="0" id="arrondi" name="arrondi" oninput="changement(this)">30</td>
             </tr>
             <tr>
                 <td><label for="rotation">Rotation</label></td>
-                <td>0<input type="range" min="0" max="180" value="0" id="rotation" name="rotation" oninput="changement(this)">180</td>
+                <td colspan="3">0<input type="range" min="0" max="180" value="0" id="rotation" name="rotation" oninput="changement(this)">180</td>
             </tr>
         </table>
     </div>

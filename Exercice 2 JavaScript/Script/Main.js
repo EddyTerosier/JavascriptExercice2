@@ -9,17 +9,47 @@ btn1.addEventListener("mousedown", function(){
     title.style.backgroundColor = "yellow"
 }, false); */
 
-function changement(element){
+function changeBackgroundColor(element){
+    let arr = document.body.style.backgroundColor.split(',');
+    
+    if(typeof arr[0] === 'undefined'){
+        arr[0]="0";
+    }
+    if(typeof arr[1] === 'undefined'){
+        arr[1]="0";
+    }
+    if(typeof arr[2] === 'undefined'){
+        arr[2]="0";
+    }
+
+    let red = arr[0].replace(/\D+/g, '');
+    let green = arr[1].replace(/\D+/g, '');
+    let blue = arr[2].replace(/\D+/g, '');
+
+    if(element.getAttribute("name")=="redBGColor"){
+        document.body.style.backgroundColor="rgb("+element.value+","+green+","+blue+")";
+    }
+    if(element.getAttribute("name")=="greenBGColor"){
+        document.body.style.backgroundColor="rgb("+red+","+element.value+","+blue+")";
+    }
+    if(element.getAttribute("name")=="blueBGColor"){
+        document.body.style.backgroundColor="rgb("+red+","+green+","+element.value+")";
+    }
+}
+function changeTitleColor(element){
     let title =document.getElementById("titre");
     if(element.getAttribute("name")=="color"){
-        title.style.color="rgb("+element.value+","+element.value+","+element.value+")";
          let a= 255-element.value;
          title.style.color="rgb("+a+","+a+","+a+")";
     }
-    else if(element.getAttribute("name")=="padding"){
+}
+function changePadding(element){
+    if(element.getAttribute("name")=="padding"){
         title.style.padding=element.value+"px";
     }
-    else if(element.getAttribute("name")=="height"){
+}
+function changement(element){
+    if(element.getAttribute("name")=="height"){
         title.style.height=element.value+"px";
     }
     else if(element.getAttribute("name")=="width"){
