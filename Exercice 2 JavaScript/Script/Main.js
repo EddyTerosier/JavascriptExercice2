@@ -8,6 +8,7 @@ let btn1 = document.getElementById("rgb");
 btn1.addEventListener("mousedown", function(){
     title.style.backgroundColor = "yellow"
 }, false); */
+let title =document.getElementById("titre");
 
 function changeBackgroundColor(element){
     let arr = document.body.style.backgroundColor.split(',');
@@ -37,33 +38,26 @@ function changeBackgroundColor(element){
     }
 }
 function changeTitleColor(element){
-    let title =document.getElementById("titre");
     if(element.getAttribute("name")=="color"){
          let a= 255-element.value;
          title.style.color="rgb("+a+","+a+","+a+")";
     }
 }
 function changePadding(element){
-    if(element.getAttribute("name")=="padding"){
         title.style.padding=element.value+"px";
-    }
 }
-function changement(element){
-    if(element.getAttribute("name")=="height"){
-        title.style.height=element.value+"px";
-    }
-    else if(element.getAttribute("name")=="width"){
-        title.style.width=element.value+"px";
-    }
-    else if(element.getAttribute("name")=="radius"){
-        title.style.borderRadius=element.value+"px";
-    }
-    else if(element.getAttribute("name")=="rotation"){
-        title.style.transform="rotate("+element.value+"deg)";
-    }
-
+function changeHeight(element){
+    title.style.height=element.value+"px";
 }
-
+function changeWidth(element){
+    title.style.width=element.value+"px";
+}
+function changeBorderRadius(element){
+    title.style.borderRadius=element.value+"px";
+}
+function rotate(element){
+    title.style.transform="rotate("+element.value+"deg)";
+}
 
 // Exercice 2
 
@@ -75,10 +69,10 @@ function changer_style(){
     p.style.padding="5px";
   }
 
-function changer_style(){
-    let p = document.getElementById("paragraphe");
-    p.classList.add("active");
-}
+// function changer_style(){
+//     let p = document.getElementById("paragraphe");
+//     p.classList.add("active");
+// }
 
 
 // Exercice 3
